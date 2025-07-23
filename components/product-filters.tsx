@@ -64,7 +64,6 @@ export default function ProductFilters({
 
       <CardContent className={`space-y-4 ${isExpanded ? "block" : "hidden"} md:block`}>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4">
-          {/* Search */}
           <div className="lg:col-span-2">
             <Label htmlFor="search">Search Products</Label>
             <div className="relative">
@@ -79,7 +78,6 @@ export default function ProductFilters({
             </div>
           </div>
 
-          {/* Category Filter */}
           <div>
             <Label htmlFor="category">Category</Label>
             <Select
@@ -100,7 +98,6 @@ export default function ProductFilters({
             </Select>
           </div>
 
-          {/* Price Range */}
           <div>
             <Label htmlFor="minPrice">Min Price</Label>
             <Input
@@ -124,7 +121,6 @@ export default function ProductFilters({
           </div>
         </div>
 
-        {/* Sort Options */}
         <div className="flex items-center gap-4 pt-4 border-t">
           <Label htmlFor="sort" className="whitespace-nowrap">
             Sort by:
