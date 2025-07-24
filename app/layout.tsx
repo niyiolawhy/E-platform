@@ -22,14 +22,14 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
-  metadataBase: new URL("https://your-domain.com"),
+  metadataBase: new URL("https://E-commerce-platform.com"),
   alternates: {
     canonical: "/",
   },
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://your-domain.com",
+    url: "https://E-commerce-platform.com",
     title: "E-commerce Platform - Your Online Store",
     description: "Discover amazing products at great prices. Browse our comprehensive collection.",
     siteName: "E-commerce Platform",

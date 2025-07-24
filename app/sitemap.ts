@@ -3,7 +3,7 @@ import { getProducts } from "@/lib/storage"
 import { generateProductSlug } from "@/lib/utils"
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://your-domain.com"
+  const baseUrl = "https://E-commerce-platform.com"
 
   const products = getProducts()
 
