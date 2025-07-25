@@ -1,5 +1,6 @@
 "use client";
 import { useState, useEffect } from "react";
+import { useRouter } from "next/navigation";
 import type { Product, ProductFormData } from "@/lib/types";
 import {
   getProducts,
@@ -46,6 +47,7 @@ export default function AdminPage() {
   const [currentPage, setCurrentPage] = useState(1);
   const PRODUCTS_PER_PAGE = 8;
   const totalPages = Math.ceil(products.length / PRODUCTS_PER_PAGE);
+  const router = useRouter();
 
   // Paginated products for current page
   const paginatedProducts = products.slice(
@@ -88,6 +90,7 @@ export default function AdminPage() {
           title: "Success",
           description: "Product added successfully",
         });
+        setActiveTab("products"); // Switch to products tab after add
       }
 
       loadProducts();
