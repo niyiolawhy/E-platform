@@ -94,7 +94,7 @@ export default function ProductCard({
             variant="outline"
             size="sm"
             onClick={() => onEdit?.(product)}
-            className="w-full sm:w-auto flex-1"
+            className="w-full !py-2 sm:w-auto flex-1"
           >
             <Edit className="w-4 h-4 mr-2" />
             Edit
@@ -103,7 +103,7 @@ export default function ProductCard({
             variant="destructive"
             size="sm"
             onClick={() => onDelete?.(product.id)}
-            className="w-full sm:w-auto flex-1"
+            className="w-full !py-2 sm:w-auto flex-1"
           >
             <Trash2 className="w-4 h-4 mr-2" />
             Delete
